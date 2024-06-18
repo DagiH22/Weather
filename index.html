@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <section class="welcome"> 
+            <h1>Hey, Welcome!</h1> 
+            <h2>Curious about the weather?</h2>
+        </section>
+        <main>
+            
+
+            <section class="landing">
+                <div class="city ">
+                    <div>
+                        <label for="byCity">Enter city name: </label>
+                        <input type="text" placeholder="Enter city..." class="input byCity" > <br>
+                    </div>
+                    <button class="get byCity"> Get the weather</button>
+                </div>
+                <div class="coord">
+                    <div>
+                        <label for="lat">Latitude</label>
+                        <input type="number" placeholder="latitude..." class="input lat" id="coords">
+                        <label for="long">Longitude</label>
+                        <input type="number" placeholder="longitude..." class="input long"> <br>
+                    </div>
+                    <button class="get byCoord">Get the weather</button>
+                </div>
+                
+                <button class="location">Use my location</button>
+
+            </section>
+            <section class="options">
+                <ul>
+                    <!-- <li onclick="bycityName()">I Want to search by City name.</li> -->
+                    <li onclick="byCoords()">Nah, I'm a nerd. I am going to Use Longitude and Latitude.</li>
+                    <li onclick="geolocation()">Just use my location.</li>
+                </ul>
+            </section>
+            <section class="result">
+                <p class="cityName">City Name</p>
+                <p class="date"></p>
+                <img src="imgs/night/rain.png" alt="current weather result image">
+                <span class="temp">30</span>
+                <div>
+                    <span class="mintemp">25</span>
+                    <span class="maxtemp">32</span>
+                </div>
+                <div class="weather">Sunny</div>
+                <div class="description">Its sunny don't forget Your sun glasses</div>
+            </section>
+        </main>
+    </div>  
+    <script src="script.js"></script>
+</body>
+</html>
