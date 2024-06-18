@@ -183,5 +183,9 @@ button:hover{
     font-weight: bolder;
     font-size: 2em;
 }
+p{
+    font-family: open-sans,Arial, Helvetica, sans-serif;
+}
+
 
 
